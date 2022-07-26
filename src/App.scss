@@ -1,0 +1,68 @@
+.App {
+  height: 100vh;
+  text-align: center;
+}
+.header__container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+  //   padding: 20px;
+}
+.todos__container {
+  width: 90%;
+  height: 80vh;
+  overflow-y: scroll;
+  margin: 0 5%;
+}
+.todo {
+  &__container {
+    border: 1px solid black;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    &-title {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-short {
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-long {
+      width: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (max-width: 500px) {
+      &-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-short {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-long {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
